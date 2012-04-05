@@ -2,11 +2,13 @@ Name: kmousetool
 Summary: Kmousetool - automatic mouse click
 Version: 4.8.1
 Release: 1
+Epoch: 2
 Group: Graphical desktop/KDE
 License: LGPLv2
 URL: http://utils.kde.org/projects/kmousetool
 Source: ftp://ftp.kde.org/pub/kde/stable/%version/src/%{name}-%version.tar.bz2
 BuildRequires: kdelibs4-devel >= 2:%{version}
+BuildRequires: libxt-devel
 
 Obsoletes: kde4-kmousetool < 4.0.68
 Provides: kde4-kmousetool = %version
