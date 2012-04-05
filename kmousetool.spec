@@ -9,6 +9,7 @@ URL: http://utils.kde.org/projects/kmousetool
 Source: ftp://ftp.kde.org/pub/kde/stable/%version/src/%{name}-%version.tar.bz2
 BuildRequires: kdelibs4-devel >= 2:%{version}
 BuildRequires: libxt-devel
+BuildRequires: libxi-devel
 
 Obsoletes: kde4-kmousetool < 4.0.68
 Provides: kde4-kmousetool = %version
