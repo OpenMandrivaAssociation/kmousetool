@@ -10,6 +10,7 @@ Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xt)
+BuildRequires:  pkgconfig(xtst)
 Requires:	kdebase4-runtime
 
 %description
