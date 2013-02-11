@@ -10,6 +10,7 @@ Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xt)
+BuildRequires:	pkgconfig(xtst)
 Requires:	kdebase4-runtime
 
 %description
@@ -38,6 +39,7 @@ so you don't have to. KMouseTool works with any mouse or pointing device.
 %changelog
 * Thu Feb 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.10.0-1
 - New version 4.10.0
+- Add pkgconfig(xtst) to BuildRequires
 
 * Wed Dec 05 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.9.4-1
 - New version 4.9.4
