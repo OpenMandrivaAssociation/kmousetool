@@ -1,5 +1,5 @@
 Name:		kmousetool
-Version:	4.12.4
+Version:	4.13.2
 Release:	1
 Epoch:		2
 Summary:	Automatic Mouse Click
@@ -37,6 +37,9 @@ so you don't have to. KMouseTool works with any mouse or pointing device.
 %makeinstall_std -C build
 
 %changelog
+* Wed Jun 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.13.2-1
+- New version 4.13.2
+
 * Wed Apr 02 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.12.4-1
 - New version 4.12.4
 
