@@ -1,6 +1,6 @@
 Name:		kmousetool
-Version:	4.14.3
-Release:	2
+Version:	15.04.0
+Release:	1
 Epoch:		2
 Summary:	Automatic Mouse Click
 Group:		Graphical desktop/KDE
