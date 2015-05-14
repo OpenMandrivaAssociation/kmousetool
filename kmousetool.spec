@@ -1,5 +1,5 @@
 Name:		kmousetool
-Version:	15.04.0
+Version:	15.04.1
 Release:	1
 Epoch:		2
 Summary:	Automatic Mouse Click
