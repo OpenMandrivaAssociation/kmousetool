@@ -1,12 +1,12 @@
 Name:		kmousetool
-Version:	15.04.3
-Release:	2
+Version:	15.08.0
+Release:	1
 Epoch:		2
 Summary:	Automatic Mouse Click
 Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
 URL:		http://www.kde.org/applications/utilities/kmousetool/
-Source:		fhttp://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs-devel
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xt)
@@ -30,7 +30,8 @@ so you don't have to. KMouseTool works with any mouse or pointing device.
 %setup -q
 
 %build
-%cmake_kde4
+%cmake_kde4 \
+	-DCMAKE_MINIMUM_REQUIRED_VERSION=3.1
 %make
 
 %install
