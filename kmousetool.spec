@@ -1,5 +1,5 @@
 Name:		kmousetool
-Version:	16.04.3
+Version:	16.08.2
 Release:	1
 Epoch:		2
 Summary:	Automatic Mouse Click
