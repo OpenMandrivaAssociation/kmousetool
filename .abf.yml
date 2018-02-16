@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kmousetool-17.12.1.tar.xz: c1bc35c3d9c5aaad5a7d0f871ecd1697c94b785c
+sources:
+  kmousetool-17.12.2.tar.xz: 43644032ae5a7ab87f1bc4fd646dab05656d3a1a
