@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		kmousetool
-Version:	 17.12.2
+Version:	 18.04.2
 Release:	1
 Epoch:		2
 Summary:	Automatic Mouse Click
@@ -28,6 +28,7 @@ so you don't have to. KMouseTool works with any mouse or pointing device.
 %{_datadir}/applications/org.kde.kmousetool.desktop
 %{_datadir}/kmousetool
 %{_datadir}/icons/hicolor/*/*/kmousetool*
+%{_datadir}/metainfo/org.kde.kmousetool.appdata.xml
 %{_mandir}/man1/*.1*
 
 %prep
