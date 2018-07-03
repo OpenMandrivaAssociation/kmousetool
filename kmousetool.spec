@@ -12,7 +12,16 @@ Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(KF5Config) cmake(KF5CoreAddons) cmake(KF5DBusAddons) cmake(KF5I18n) cmake(KF5IconThemes) cmake(KF5Notifications) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5Widgets)
+BuildRequires:	cmake(KF5Config) cmake(KF5CoreAddons) cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Gui)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5IconThemes)
+BuildRequires:	cmake(KF5Notifications)
+BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xt)
