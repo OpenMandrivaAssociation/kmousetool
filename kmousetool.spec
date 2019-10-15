@@ -9,6 +9,7 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
 URL:		http://www.kde.org/applications/utilities/kmousetool/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		kmousetool-19.08.2-libglvnd-1.2.0.patch
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
@@ -42,7 +43,7 @@ so you don't have to. KMouseTool works with any mouse or pointing device.
 %{_mandir}/man1/*.1*
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %cmake_kde5
