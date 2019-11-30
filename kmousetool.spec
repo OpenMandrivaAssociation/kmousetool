@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		kmousetool
-Version:	19.11.80
+Version:	19.11.90
 Release:	1
 Epoch:		2
 Summary:	Automatic Mouse Click
@@ -9,7 +9,6 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
 URL:		http://www.kde.org/applications/utilities/kmousetool/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		kmousetool-19.08.2-libglvnd-1.2.0.patch
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
