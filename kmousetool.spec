@@ -1,8 +1,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		kmousetool
-Version:	19.12.2
-Release:	2
+Version:	19.12.3
+Release:	1
 Epoch:		2
 Summary:	Automatic Mouse Click
 Group:		Graphical desktop/KDE
