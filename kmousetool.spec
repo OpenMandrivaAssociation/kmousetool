@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		kmousetool
-Version:	21.08.3
+Version:	21.12.0
 Release:	1
 Epoch:		2
 Summary:	Automatic Mouse Click
@@ -34,7 +34,6 @@ KMouseTool is a Linux-based KDE program. It clicks the mouse for you,
 so you don't have to. KMouseTool works with any mouse or pointing device.
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog COPYING COPYING.DOC README TODO
 %{_bindir}/kmousetool
 %{_datadir}/applications/org.kde.kmousetool.desktop
 %{_datadir}/kmousetool
