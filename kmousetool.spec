@@ -2,7 +2,7 @@
 
 Name:		kmousetool
 Version:	22.08.2
-Release:	1
+Release:	2
 Epoch:		2
 Summary:	Automatic Mouse Click
 Group:		Graphical desktop/KDE
