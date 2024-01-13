@@ -15,6 +15,9 @@ BuildRequires:	cmake(KF6Config) cmake(KF6CoreAddons) cmake(KF6WidgetsAddons)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Gui)
 BuildRequires:  cmake(Qt6Multimedia)
+BuildRequires:  cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(Qt6QmlNetwork)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(KF6DBusAddons)
 BuildRequires:	cmake(KF6DocTools)
@@ -29,6 +32,7 @@ BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xt)
 BuildRequires:	pkgconfig(xtst)
 BuildRequires:  qt6-qtbase-theme-gtk3
+BuildRequires:	qt6-qtmultimedia-gstreamer
 
 %description
 KMouseTool is a Linux-based KDE program. It clicks the mouse for you,
