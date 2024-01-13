@@ -2,18 +2,19 @@
 
 Name:		plasma6-kmousetool
 Version:	24.01.90
-Release:	2
+Release:	1
 Summary:	Automatic Mouse Click
 Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
-URL:		http://www.kde.org/applications/utilities/kmousetool/
-Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kmousetool-%{version}.tar.xz
+URL:		https://www.kde.org/applications/utilities/kmousetool/
+Source0:	https://download.kde.org/%{stable}/release-service/%{version}/src/kmousetool-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6Config) cmake(KF6CoreAddons) cmake(KF6WidgetsAddons)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Gui)
+BuildRequires:  cmake(Qt6Multimedia)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(KF6DBusAddons)
 BuildRequires:	cmake(KF6DocTools)
@@ -27,6 +28,7 @@ BuildRequires:	cmake(Phonon4Qt6)
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xt)
 BuildRequires:	pkgconfig(xtst)
+BuildRequires:  qt6-qtbase-theme-gtk3
 
 %description
 KMouseTool is a Linux-based KDE program. It clicks the mouse for you,
