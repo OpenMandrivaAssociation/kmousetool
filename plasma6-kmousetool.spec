@@ -1,13 +1,20 @@
+%define git 20240218
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		plasma6-kmousetool
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 Summary:	Automatic Mouse Click
 Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
 URL:		https://www.kde.org/applications/utilities/kmousetool/
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/accessibility/kmousetool/-/archive/%{gitbranch}/kmousetool-%{gitbranchd}.tar.bz2#/kmousetool-%{git}.tar.bz2
+%else
 Source0:	https://download.kde.org/%{stable}/release-service/%{version}/src/kmousetool-%{version}.tar.xz
+%endif
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
@@ -48,7 +55,7 @@ so you don't have to. KMouseTool works with any mouse or pointing device.
 %{_mandir}/man1/*.1*
 
 %prep
-%autosetup -p1 -n kmousetool-%{?git:master}%{!?git:%{version}}
+%autosetup -p1 -n kmousetool-%{?git:%{gitbranchd}}%{!?git:%{version}}
 
 %build
 %cmake \
