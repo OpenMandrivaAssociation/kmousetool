@@ -7,7 +7,7 @@ Epoch:		2
 Summary:	Automatic Mouse Click
 Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
-URL:		http://www.kde.org/applications/utilities/kmousetool/
+URL:		https://www.kde.org/applications/utilities/kmousetool/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
