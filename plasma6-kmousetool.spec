@@ -5,7 +5,7 @@
 
 Name:		plasma6-kmousetool
 Version:	24.12.3
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Summary:	Automatic Mouse Click
 Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
