@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		kmousetool
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Automatic Mouse Click
 Group:		Graphical desktop/KDE
@@ -42,6 +42,11 @@ BuildRequires:	pkgconfig(xtst)
 BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:	qt6-qtmultimedia-gstreamer
 
+%rename plasma6-kmousetool
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KMouseTool is a Linux-based KDE program. It clicks the mouse for you,
 so you don't have to. KMouseTool works with any mouse or pointing device.
@@ -53,16 +58,3 @@ so you don't have to. KMouseTool works with any mouse or pointing device.
 %{_datadir}/icons/hicolor/*/*/kmousetool*
 %{_datadir}/metainfo/org.kde.kmousetool.appdata.xml
 %{_mandir}/man1/*.1*
-
-%prep
-%autosetup -p1 -n kmousetool-%{?git:%{gitbranchd}}%{!?git:%{version}}
-
-%build
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-%ninja
-
-%install
-%ninja_install -C build
-%find_lang %{name} --all-name --with-html --with-man
